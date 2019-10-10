@@ -1,8 +1,9 @@
-#Hackathon GOUD Modal
+# GOUD - Hackathon Modal
+## Virtual Adoption System
 
-##Login:- **Donor** **Orphanage/NGOs**
+## Login:- **Donor** **Orphanage/NGOs**
 
-###Orphanage Database Schema.
+### Orphanage Database Schema.
 
 - Orphanage name
 - Owner/manager name
@@ -13,7 +14,7 @@
 - Orphanage Photo (not-required)
 - Description (not-required)
 
-###Orphanage Adds Kids (KidsSchema).
+### Orphanage Adds Kids (KidsSchema).
 
 - Unique ID
 - isDonated="false"
@@ -26,7 +27,7 @@
 
 *Then PhoneNo for chat and call (only that donor who is donating)*
 
-###Donor Database Schema :-
+### Donor Database Schema.
 
 - Donor Name
 - Location
