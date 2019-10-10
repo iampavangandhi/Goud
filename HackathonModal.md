@@ -1,7 +1,7 @@
 # GOUD - Hackathon Modal
 ## Virtual Adoption System
 
-## Login:- **Donor,**, **Orphanage/NGOs**
+## Login:- **Donor,** **Orphanage/NGOs**
 
 ## Dashboards:- **Donor,** **Orphanage/NGOs**
 
