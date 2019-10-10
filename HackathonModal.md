@@ -23,7 +23,7 @@
 - Age
 - Class
 - Photo
-- Description (not-required if any disease etc)
+- Description (not-required e.g. if any disease etc)
 
 *Then PhoneNo for chat and call (only that donor who is donating)*
 
