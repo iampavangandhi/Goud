@@ -5,13 +5,10 @@ const passport = require('passport');
 const User = require('../models/User');
 const { forwardAuthenticated } = require('../config/auth');
 
-// Login Page
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
-// Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 
-// Register
 router.post('/register', (req, res) => {
   const { name, email, password, password2 } = req.body;
   let errors = [];
@@ -75,7 +72,6 @@ router.post('/register', (req, res) => {
   }
 });
 
-// Login
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
     successRedirect: '/dashboard',
@@ -84,7 +80,6 @@ router.post('/login', (req, res, next) => {
   })(req, res, next);
 });
 
-// Logout
 router.get('/logout', (req, res) => {
   req.logout();
   req.flash('success_msg', 'You are logged out');
