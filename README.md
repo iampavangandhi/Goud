@@ -11,5 +11,3 @@
 
 *And Some API :- For Login(Passport) & Payment Gateway.*
 
-config/keys.js contains the link to our database
-
