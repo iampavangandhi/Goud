@@ -28,6 +28,16 @@ body {
     overflow-x: hidden;
 }
 
+.navigation{
+    background-color: whitesmoke;
+    border-bottom: 2px solid lightgray;
+}
+
+.userImage{
+    border-radius: 50%;
+    border: 3px solid lightgray;
+}
+
 .dashboard{
     width: 91%;
     background-color: whitesmoke;
@@ -67,11 +77,25 @@ body {
 }
 
 .dashboard-kids-cards .card{
-    margin: 15px 12px;
+    margin: 5px 12px;
 }
 
 .dashboard-kids .card img{
     border-bottom: 4px solid red;
+    position: relative;
+}
+
+.dashboard-kids .card h2{
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 8px;
+}
+
+.dashboard-kids{
+    
+    background-color: white;
+    
 }
 
 .dashboard-details-text{

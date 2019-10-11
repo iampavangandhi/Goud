@@ -24,6 +24,24 @@
 </head>
 
 <body>
+    <div class="navigation">
+    
+    <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="./index.html">
+                    <i class="fas fas fa-hands"></i> GOUD(गोद) </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-align-right text-light"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    
+                    <a class="logout" href="" title="">
+                        <button class="btn btn-primary my-1 ml-3 mr-1" type="">LogOut</button>
+                    </a>
+                </div>
+            </nav>
+            </div>
     <section class="dashboard-sec d-flex justify-content-center align-items-center">
         <div class="dashboard d-flex flex-column align-items-center">
             <div class="dashboard-details d-flex flex-row justify-content-start align-items-center ">
@@ -42,87 +60,83 @@
             </div>
             <div class="dashboard-add-kids ">
                 <div class="dashboard-add-kids-text d-flex justify-content-center mt-3">
-                <h4>ADD YOUR KIDS</h4>
+                    <h4>ADD YOUR KIDS</h4>
                 </div>
                 <div class="d-flex flex-row">
-                    
-                
-                <div class="col-6">
-                    <form>
-                        <div class="form-group">
-                            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" min="0" max="18" class="form-control" id="exampleInputPassword1" placeholder="Age">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Class">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-6">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description">
-                        </div>
-                        <div class="form-group">
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+                    <div class="col-6">
+                        <form>
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" min="0" max="18" class="form-control" id="exampleInputPassword1" placeholder="Age">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Class">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description">
+                            </div>
+                            <div class="form-group">
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="dashboard-kids ">
+            <div class="dashboard-kids d-flex flex-column align-items-center">
+                <div class="dashboard-add-kids-text  d-flex justify-content-center mt-3">
+                    <h3>YOUR KIDS</h3>
+                </div>
                 <div class="dashboard-kids-cards d-flex flex-row align-items-center">
-                    
-                
-                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
-                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Toseef</p>
-                        <p class="card-text">18</p>
-                        <p class="card-text">12th</p>
+                    <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                        <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                        <h2 class="cross">X</h2>
+                        <div class="card-body">
+                            <p class="card-text">Toseef</p>
+                            <p class="card-text">18</p>
+                            <p class="card-text">12th</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
-                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Toseef</p>
-                        <p class="card-text">18</p>
-                        <p class="card-text">12th</p>
+                    <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                        <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Toseef</p>
+                            <p class="card-text">18</p>
+                            <p class="card-text">12th</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
-                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Toseef</p>
-                        <p class="card-text">18</p>
-                        <p class="card-text">12th</p>
+                    <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                        <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Toseef</p>
+                            <p class="card-text">18</p>
+                            <p class="card-text">12th</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
-                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Toseef</p>
-                        <p class="card-text">18</p>
-                        <p class="card-text">12th</p>
+                    <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                        <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Toseef</p>
+                            <p class="card-text">18</p>
+                            <p class="card-text">12th</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
-                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Toseef</p>
-                        <p class="card-text">18</p>
-                        <p class="card-text">12th</p>
+                    <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                        <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Toseef</p>
+                            <p class="card-text">18</p>
+                            <p class="card-text">12th</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Bootstrap CDNs -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
