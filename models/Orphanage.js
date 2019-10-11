@@ -6,7 +6,7 @@ const OrphSchema = new mongoose.Schema({
         required : true
     },
     manager : {
-        type : Schema.Types.ObjectId,
+        type : mongoose.Schema.Types.ObjectId,
         ref : 'User',
         required : true
     },
@@ -30,7 +30,7 @@ const OrphSchema = new mongoose.Schema({
         required : true
     },
     kids : [{
-        type : Schema.Types.ObjectId,
+        type : mongoose.Schema.Types.ObjectId,
         ref : 'Kids',
         required : true
     }]
