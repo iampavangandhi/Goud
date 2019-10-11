@@ -30,7 +30,7 @@ body {
 
 .dashboard{
     width: 91%;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     height: 150vh;
     margin-top: 7vh;
     margin-bottom: 7vh;
@@ -53,16 +53,25 @@ body {
 }
 
 .dashboard-add-kids .col-6{
-    margin-top: 35px;
+    margin-top: 25px;
     margin-left: 30px;
 }
 
-.dashboard-kids{
+.dashboard-kids-cards{
     width: 95%;
     background-color: whitesmoke;
+    justify-content: ;
     height: 60vh;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.dashboard-kids-cards .card{
+    margin: 15px 12px;
+}
+
+.dashboard-kids .card img{
+    border-bottom: 4px solid red;
 }
 
 .dashboard-details-text{
