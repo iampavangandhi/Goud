@@ -43,8 +43,7 @@
 *After that when he donate we have to link him with the
 particular kid database, also kids have a unique id.
 and after that isDonated = "true".
-Notifications via email to the donor
-*
+Notifications via email to the donor.*
 
 
 
