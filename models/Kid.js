@@ -9,9 +9,14 @@ const KidSchema = new mongoose.Schema({
         type : Number,
         required : true
     },
-    fName : {
-        type : String,
-        required : true
+    class : {
+        type : Number
+    },
+    photo : {
+        type : String
+    },
+    desc : {
+        type : String
     }
 });
 
