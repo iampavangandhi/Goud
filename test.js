@@ -10,7 +10,7 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) 
     if(err) console.log(err)
     var dbc = mongoose.connection;
    
-    var OrphanageData = new Orp ({
+   /* var OrphanageData = new Orp ({
         name : "Orphanage 1",
         manager : "5da02f23453e7009bfc64d5c",
         address : "123 localaddress",
@@ -29,4 +29,14 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) 
     });
 
     OrphanageData.updateOne({name : "Orphanage 1"}).then(err => console.log(err));
+    */
+
+
+// find all athletes who play tennis, selecting the 'name' and 'age' fields
+query= Orp.find( )
+query.exec( function( err, data){
+    console.log(data)
+}
+
+    )
 });
