@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Nunito|Open+Sans|Roboto&display=swap');
+
+/* Global Fonts and Colors */
+:root {
+    /* Fonts */
+    --Roboto: 'Roboto', sans-serif;
+    --Nunito: 'Nunito', sans-serif;
+    --Lato: 'Lato', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --OpenSans: 'Open Sans', sans-serif;
+
+    /* Colors */
+    --primary: ;
+    --secondary: ;
+    --bggradient: ;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.dashboard{
+    width: 91%;
+    background-color: lightgrey;
+    height: 150vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.dashboard-details{
+    width: 95%;
+    background-color: white;
+    height: 25vh;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.dashboard-add-kids{
+    width: 95%;
+    background-color: white;
+    height: 40vh;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.dashboard-add-kids .col-6{
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+.dashboard-kids{
+    width: 95%;
+    background-color: whitesmoke;
+    height: 60vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dashboard-details-text{
+
+}
+
+.form-group{
+    width: 80%;
+}

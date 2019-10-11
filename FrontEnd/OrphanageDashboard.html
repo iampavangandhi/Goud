@@ -12,7 +12,7 @@
     <!-- Title -->
     <title>Goud (गोद) - Virtual Adoption System</title>
     <!-- CSS Links -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -24,48 +24,90 @@
 </head>
 
 <body>
-    
-
-
-
-
-
-
-
-
-
-
-    <footer id="footer" class="">
-        <!-- footer -->
-        <footer>
-            <div class="container-fluid p-0">
-                <div class="row m-5 text-left">
-                    <div class="col-md-9">
-                        <h4 class="text-light">Thank you</h4>
-                        <p class="text-muted">
-                            For any suggestion and stuffs mail me @ pavangandhi100@gmail.com </p>
-                        <p class="pt-2 text-muted">
-                            Copyright ©2019 All rights reserved | This site is made by
-                            <a class="sp" href="#"><span> The Mavericks </span></a>
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="text-light">Follow Me</h4>
-                        <p class="text-muted">Let us be social</p>
-                        <div class="column text-light">
-                            <a href="https://www.linkedin.com/in/pavan-gandhi/"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.github.com/iampavangandhi"><i class="fab fa-github"></i></a>
-                            <a href="https://www.facebook.com/iampavangandhi"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/official_pavang/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.twitter.com/PavanGandhi7"><i class="fab fa-twitter"></i></a>
+    <section class="dashboard-sec d-flex justify-content-center align-items-center">
+        <div class="dashboard d-flex flex-column align-items-center">
+            <div class="dashboard-details d-flex flex-row justify-content-start align-items-center ">
+                <img class="m-2" src="./Assets/3.jpg" height="140px" alt="">
+                <div class="dashboard-details-text">
+                    <h2 class="ml-2">Welcome, Orphanage name</h2>
+                    <h5 class="ml-3"><i class="mr-2 fas fas fa-map-marked-alt"></i>New Delhi</h5>
+                    <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i>Manager Name</h5>
+                    <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i>90XXXXXXXX</h5>
+                </div>
+                <div class="dashboard-details-text">
+                    <h5 class="ml-5"><i class="mr-2 fas fas fa-map-marked-alt"></i>New Delhi</h5>
+                    <h5 class="ml-5"><i class="mr-2 fas fas fa-map-marked-alt"></i>New Delhi</h5>
+                    <h5 class="ml-5"><i class="mr-2 fas fas fa-mobile"></i>Manager Name</h5>
+                    <h5 class="ml-5"><i class="mr-2 fas fas fa-mobile"></i>90XXXXXXXX</h5>
+                </div>
+            </div>
+            <div class="dashboard-add-kids d-flex flex-row">
+                <div class="col-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
                         </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Age">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Class">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="dashboard-kids d-flex flex-row">
+                <div class="card my-4 ml-4 m-2" style="width: 12rem;">
+                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Toseef</p>
+                        <p class="card-text">18</p>
+                        <p class="card-text">12th</p>
+
+                    </div>
+                </div>
+
+                <div class="card my-4 m-2" style="width: 12rem;">
+                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card my-4 m-2" style="width: 12rem;">
+                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card my-4 m-2" style="width: 12rem;">
+                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card mr-3 my-4 m-2" style="width: 12rem;">
+                    <img src="./Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Social Links -->
-        <!-- Newsletter -->
-    </footer>
+        </div>
+    </section>
     <!-- Bootstrap CDNs -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
