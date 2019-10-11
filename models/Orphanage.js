@@ -10,6 +10,25 @@ const OrphSchema = new mongoose.Schema({
         ref : 'User',
         required : true
     },
+    address : {
+        type : String,
+        required : true
+    },
+    phone : {
+        type : Number,
+        required : true
+    },email : {
+        type : String,
+        required : true
+    },
+    photo : {
+        type : String,
+        required : true
+    },
+    description :{
+        type : String,
+        required : true
+    },
     kids : [{
         type : Schema.Types.ObjectId,
         ref : 'Kids',
