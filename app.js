@@ -11,11 +11,7 @@ require('./config/passport')(passport);
 
 const db = require('./config/keys').mongoURI;
 
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true ,useUnifiedTopology : true }
-  )
+mongoose.connect(db,{ useNewUrlParser: true ,useUnifiedTopology : true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
@@ -32,6 +28,8 @@ app.use(
   })
 );
 
+app.use(express.static('public'));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -44,8 +42,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/', require('./routes/index.js'));
-app.use('/users', require('./routes/users.js'));
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/users'));
+app.use('/orphanage', require('./routes/orphanage'));
 
 const PORT = process.env.PORT || 3000;
 

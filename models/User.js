@@ -17,9 +17,9 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  isVerified : { 
+  manager : {
     type : Boolean,
-    required : true
+    default : false
   }
 });
 

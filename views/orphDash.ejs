@@ -1,0 +1,95 @@
+<section class="dashboard-sec d-flex justify-content-center align-items-center">
+    <div class="dashboard d-flex flex-column align-items-center">
+        <div class="dashboard-details d-flex flex-row justify-content-start align-items-center ">
+            <img class="m-2" src="../Assets/3.jpg" height="140px" alt="">
+            <div class="dashboard-details-text">
+                <h3 class="ml-2">Welcome, Orphanage name</h3>
+                <h5 class="ml-3"><i class="mr-2 fas fas fa-map-marked-alt"></i>New Delhi</h5>
+                <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i>Manager Name</h5>
+                <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i>90XXXXXXXX</h5>
+            </div>
+            <div class="dashboard-details-text">
+                <h5 class="ml-5"><i class="mr-2 fas fas fa-map-marked-alt"></i>Established Year : 2000</h5>
+                <h5 class="ml-5"><i class="mr-2 fas fas fa-map-marked-alt"></i>No. of Kids : 25</h5>
+                <h5 class="ml-5"><i class="mr-2 fas fas fa-mobile"></i>Lorem ipsum dolor sit amet, ectetur</h5>
+            </div>
+        </div>
+        <div class="dashboard-add-kids ">
+            <div class="dashboard-add-kids-text d-flex justify-content-center mt-3">
+                <h4>ADD YOUR KIDS</h4>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="col-6">
+                    <form action="/orphanage/dashboard" method="POST">
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" min="0" max="18" class="form-control" id="age" placeholder="Age">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="class" placeholder="Class">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-6">
+                        <div class="form-group">
+                            <label for="description">Description :</label>
+                            <textarea class="form-control" id="description" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="dashboard-kids d-flex flex-column align-items-center">
+            <div class="dashboard-add-kids-text  d-flex justify-content-center mt-3">
+                <h3>YOUR KIDS</h3>
+            </div>
+            <div class="dashboard-kids-cards d-flex flex-row align-items-center">
+                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                    <img src="../Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <h2 class="cross">X</h2>
+                    <div class="card-body">
+                        <p class="card-text">Toseef</p>
+                        <p class="card-text">18</p>
+                        <p class="card-text">12th</p>
+                    </div>
+                </div>
+                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                    <img src="../Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Toseef</p>
+                        <p class="card-text">18</p>
+                        <p class="card-text">12th</p>
+                    </div>
+                </div>
+                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                    <img src="../Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Toseef</p>
+                        <p class="card-text">18</p>
+                        <p class="card-text">12th</p>
+                    </div>
+                </div>
+                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                    <img src="../Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Toseef</p>
+                        <p class="card-text">18</p>
+                        <p class="card-text">12th</p>
+                    </div>
+                </div>
+                <div class="card d-inline-block shadow-lg" style="width: 12rem;">
+                    <img src="../Assets/3.jpg" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Toseef</p>
+                        <p class="card-text">18</p>
+                        <p class="card-text">12th</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
