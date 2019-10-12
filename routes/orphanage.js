@@ -2,20 +2,14 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const {ensureAuthenticated} = require('../config/auth');
 const Org = require('../models/Orphanage');
 const { forwardAuthenticated } = require('../config/auth');
 
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
-<<<<<<< HEAD
 router.get('/dashboard',ensureAuthenticated,(req ,res)=> res.render('orphDash'));
 
-router.post('/dashboard',ensureAuthenticated,(req,res) => {
-
-});
-
-module.exports = router;
-=======
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 
 router.post('/register', (req, res) => {
@@ -94,4 +88,3 @@ router.get('/logout', (req, res) => {
 });
 
 module.exports = router;
->>>>>>> bb72735b0ecd3a20df4c4225df073a00cface742

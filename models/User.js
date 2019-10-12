@@ -16,13 +16,6 @@ const UserSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now
-<<<<<<< HEAD
-  },
-  manager : {
-    type : Boolean,
-    default : false
-=======
->>>>>>> bb72735b0ecd3a20df4c4225df073a00cface742
   }
 });
 

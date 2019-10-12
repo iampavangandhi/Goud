@@ -6,9 +6,6 @@ const User = require('./models/User');
 const Orp = require('./models/Orphanage');
 const Kid = require('./models/Kid');
 
-<<<<<<< HEAD
-console.log(user.id);
-=======
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
     if(err) console.log(err)
     var dbc = mongoose.connection;
@@ -43,4 +40,3 @@ query.exec( function( err, data){
 
     )
 });
->>>>>>> bb72735b0ecd3a20df4c4225df073a00cface742

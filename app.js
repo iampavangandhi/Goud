@@ -42,15 +42,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-<<<<<<< HEAD
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/orphanage', require('./routes/orphanage'));
-=======
-app.use('/', require('./routes/index.js'));
-app.use('/users', require('./routes/users.js'));
-app.use('/orphanage', require('./routes/orphanage.js'));
->>>>>>> bb72735b0ecd3a20df4c4225df073a00cface742
 
 const PORT = process.env.PORT || 3000;
 

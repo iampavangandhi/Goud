@@ -40,3 +40,4 @@ const OrphSchema = new mongoose.Schema({
 const Orphanage = mongoose.model('Orphange', OrphSchema);
 
 module.exports = Orphanage;
+
