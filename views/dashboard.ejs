@@ -17,12 +17,12 @@
 <section class="dashboard-sec d-flex justify-content-center align-items-center">
     <div class="dashboard d-flex flex-column align-items-center">
         <div class="dashboard-details d-flex flex-row justify-content-center align-items-center ">
-            <img class="userImage m-2" src="./Assets/111.jpg" width="130px" height="130px" alt="">
+            <img class="userImage m-2" src="./Assets/.jpg" width="130px" height="130px" alt="">
             <div class="dashboard-details-text">
-                <h3 class="ml-2">Welcome, User Name</h3>
+                <h3 class="ml-2">Welcome, <%= user.name %></h3>
                 <h5 class="ml-3"><i class="mr-2 fas fa-map-marked-alt"></i>New Delhi</h5>
-                <h5 class="ml-3"><i class="mr-2 fas fa-envelope"></i>Email</h5>
-                <h5 class="ml-3"><i class="mr-2 fas fa-mobile"></i>90XXXXXXXX</h5>
+                <h5 class="ml-3"><i class="mr-2 fas fa-envelope"></i><%= user.email %></h5>
+                <h5 class="ml-3"><i class="mr-2 fas fa-mobile"></i><%= user.phone %></h5>
                 
             </div>
         </div>
