@@ -18,6 +18,7 @@ router.post('/register', (req, res) => {
   }
 
   if(phone.length > 10 ){
+
     errors.push({ msg : 'Phone no must be 10 digits only.'})
   }
 

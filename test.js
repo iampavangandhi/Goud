@@ -9,6 +9,9 @@ const Kid = require('./models/Kid');
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => { 
     var dbc = mongoose.connection;
 
+    console.log(dbc.collections);
+
+
   /*
   Orp.find({} , 
 
@@ -30,4 +33,5 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) 
     console.log(dbc.collections);
 */
     Kid.find().then(users=> console.log(users));
+
 });
