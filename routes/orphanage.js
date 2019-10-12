@@ -10,10 +10,11 @@ router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
 router.get('/dashboard',ensureAuthenticated,(req ,res)=> res.render('orphDash'));
 
-router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+router.get('/register', forwardAuthenticated, (req, res) => res.render('orphanageRegister'));
 
 router.post('/register', (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  const { name, email,manager, password, password2 ,description , address } = req.body;
+ console.log({ name, email,manager, password, password2 ,description , address } )
   let errors = [];
 
   if (!name || !email || !password || !password2) {
@@ -49,9 +50,12 @@ router.post('/register', (req, res) => {
         });
       } else {
         const newOrg = new Org({
-          name
+        'name':name,
+          'email':email,
+          'manager':manager,
+          'password':password
         });
-
+          console.log(password,newOrg.password)
         bcrypt.genSalt(10, (err, salt) => {
           bcrypt.hash(newOrg.password, salt, (err, hash) => {
             if (err) throw err;

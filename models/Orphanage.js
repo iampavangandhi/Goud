@@ -6,14 +6,17 @@ const OrphSchema = new mongoose.Schema({
         required : true
     },
     manager : {
-        type : mongoose.Schema.Types.ObjectId,
-        ref : 'User',
+        type : String,
         required : true
     },
     address : {
         type : String,
         required : true
     },
+     password: {
+    type: String,
+    required: true
+  },
     phone : {
         type : Number,
         required : true
@@ -23,7 +26,7 @@ const OrphSchema = new mongoose.Schema({
     },
     photo : {
         type : String,
-        required : true
+        required : false
     },
     description :{
         type : String,
@@ -32,7 +35,7 @@ const OrphSchema = new mongoose.Schema({
     kids : [{
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Kids',
-        required : true
+        required : false
     }]
 
 });
