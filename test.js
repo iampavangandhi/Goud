@@ -8,5 +8,29 @@ const Kid = require('./models/Kid');
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => { 
     var dbc = mongoose.connection;
+<<<<<<< HEAD
     console.log(dbc.collections);
+=======
+
+  
+  Orp.find({} , 
+
+  function(err, data){
+    if(err){
+        console.log(err);
+        return
+    }
+
+    if(data.length == 0) {
+        console.log("No record found")
+        return
+    }
+
+    console.log(data);
+})
+
+
+    console.log(dbc.collections);
+
+>>>>>>> be9fc236ba65897651a6a8a3661e84e980e3602c
 });

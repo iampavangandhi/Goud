@@ -8,6 +8,7 @@ const session = require('express-session');
 const app = express();
 
 require('./config/passport')(passport);
+//equire('./config/orphanagePassport')(passport);
 
 const db = require('./config/keys').mongoURI;
 

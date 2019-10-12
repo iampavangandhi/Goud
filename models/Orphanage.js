@@ -13,16 +13,21 @@ const OrphSchema = new mongoose.Schema({
         type : String,
         required : true
     },
+     password: {
+    type: String,
+    required: true
+  },
     phone : {
         type : Number,
         required : true
-    },email : {
+    },
+    email : {
         type : String,
         required : true
     },
     photo : {
         type : String,
-        required : true
+        required : false
     },
     description :{
         type : String,
@@ -30,7 +35,14 @@ const OrphSchema = new mongoose.Schema({
     },
     kids : [{
         type : mongoose.Schema.Types.ObjectId,
+<<<<<<< HEAD
         ref : 'Kids'
+=======
+
+        ref : 'Kids',
+        required : false
+
+>>>>>>> be9fc236ba65897651a6a8a3661e84e980e3602c
     }]
 
 });

@@ -6,23 +6,28 @@ const {ensureAuthenticated} = require('../config/auth');
 const Org = require('../models/Orphanage');
 const { forwardAuthenticated } = require('../config/auth');
 
-router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
+router.get('/login', forwardAuthenticated, (req, res) => res.render('orphanageLogin'));
 
 router.get('/dashboard',ensureAuthenticated,(req ,res)=> res.render('orphDash'));
 
-router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+router.get('/register', forwardAuthenticated, (req, res) => res.render('orphanageRegister'));
 
 router.post('/register', (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  const { name, email,manager, password, password2 ,phone ,description , address } = req.body;
+ console.log({ name, email,manager, password, password2 ,description ,phone, address } )
   let errors = [];
 
-  if (!name || !email || !password || !password2) {
+  if (!name || !email || !password || !password2 || !manager || !description || !phone ||!address  ) {
     errors.push({ msg: 'Please enter all fields' });
   }
 
   if (password != password2) {
     errors.push({ msg: 'Passwords do not match' });
   }
+   if(phone.length > 10 ){
+    errors.push({ msg : 'Phone no must be 10 digits only.'})
+  }
+
 
   if (password.length < 6) {
     errors.push({ msg: 'Password must be at least 6 characters' });
@@ -33,8 +38,12 @@ router.post('/register', (req, res) => {
       errors,
       name,
       email,
+      manager,
       password,
-      password2
+      password2,
+      description ,
+      phone, 
+      address
     });
   } else {
     Org.findOne({ email: email }).then(user => {
@@ -45,13 +54,22 @@ router.post('/register', (req, res) => {
           name,
           email,
           password,
-          password2
+          password2,
+          description ,
+          phone,
+           address
         });
       } else {
         const newOrg = new Org({
-          name
+        'name':name,
+          'email':email,
+          'manager':manager,
+          'password':password,
+          'phone':phone,
+          'description':description,
+          'address':address
         });
-
+          console.log(newOrg.password)
         bcrypt.genSalt(10, (err, salt) => {
           bcrypt.hash(newOrg.password, salt, (err, hash) => {
             if (err) throw err;
@@ -75,7 +93,8 @@ router.post('/register', (req, res) => {
 
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
-    successRedirect: '/dashboard',
+    //req.send('hey orphanage'),
+    successRedirect: '/orphanage/register',
     failureRedirect: '/orphanage/login',
     failureFlash: true
   })(req, res, next);
@@ -84,7 +103,7 @@ router.post('/login', (req, res, next) => {
 router.get('/logout', (req, res) => {
   req.logout();
   req.flash('success_msg', 'You are logged out');
-  res.redirect('/users/login');
+  res.redirect('/orphanage/login');
 });
 
 module.exports = router;
