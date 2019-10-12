@@ -20,7 +20,8 @@ const OrphSchema = new mongoose.Schema({
     phone : {
         type : Number,
         required : true
-    },email : {
+    },
+    email : {
         type : String,
         required : true
     },
