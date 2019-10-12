@@ -10,11 +10,15 @@ router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 
 router.post('/register', (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  const { name, email, phone, address, password, password2 } = req.body;
   let errors = [];
 
-  if (!name || !email || !password || !password2) {
+  if (!name || !email || !phone || !password || !password2) {
     errors.push({ msg: 'Please enter all fields' });
+  }
+
+  if(phone.length > 10 || isInteger(phone)){
+    errors.push({ msg : 'Phone no must be 10 digits only.'})
   }
 
   if (password != password2) {
@@ -30,6 +34,8 @@ router.post('/register', (req, res) => {
       errors,
       name,
       email,
+      phone,
+      address,
       password,
       password2
     });
@@ -41,6 +47,8 @@ router.post('/register', (req, res) => {
           errors,
           name,
           email,
+          phone,
+          address,
           password,
           password2
         });
@@ -48,6 +56,8 @@ router.post('/register', (req, res) => {
         const newUser = new User({
           name,
           email,
+          phone,
+          address,
           password
         });
 
