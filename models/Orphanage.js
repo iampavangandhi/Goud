@@ -6,8 +6,7 @@ const OrphSchema = new mongoose.Schema({
         required : true
     },
     manager : {
-        type : mongoose.Schema.Types.ObjectId,
-        ref : 'User',
+        type : String,
         required : true
     },
     address : {
@@ -31,8 +30,7 @@ const OrphSchema = new mongoose.Schema({
     },
     kids : [{
         type : mongoose.Schema.Types.ObjectId,
-        ref : 'Kids',
-        required : true
+        ref : 'Kids'
     }]
 
 });

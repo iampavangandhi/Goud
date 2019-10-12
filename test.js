@@ -8,6 +8,5 @@ const Kid = require('./models/Kid');
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => { 
     var dbc = mongoose.connection;
-    dbc.dropCollection("orphanage").then(console.log("done"));
-
+    console.log(dbc.collections);
 });
