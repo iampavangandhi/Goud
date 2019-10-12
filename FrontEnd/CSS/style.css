@@ -17,6 +17,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: var(--Lato)
 }
 
 html,
@@ -116,14 +117,20 @@ header .nav-link:hover {
 }
 
 .about img {
-    margin: 100px 170px;
+    
     width: 75%;
-    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
     height: auto;
     border-left: 5px solid red;
     border-top: 5px solid red;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.about img:hover {
+    filter: blur(3px);
+    
 }
 
 
@@ -153,15 +160,7 @@ h3 {
 
 
 
-.container {
 
-    padding-top: 4vmin;
-    padding-bottom: 4vmin;
-}
-
-.container p {
-    font-size: 3vmin;
-}
 
 .card {
     width: 23em;
@@ -170,8 +169,14 @@ h3 {
     margin-bottom: 8vmin;
 }
 
+
+
 .card-img-top {
     border-bottom: 5px solid red;
+}
+
+.card-img-top:hover {
+    border-bottom: 5px solid blue;
 }
 
 .card .card-text {
@@ -190,6 +195,10 @@ h3 {
 
 }
 
+.card-body p{
+    font-size: 18px;
+}
+
 .getInvolved-section{
     margin-top: 50px;
 }
@@ -199,12 +208,16 @@ h3 {
     margin: 80px 170px;
     width: 75%;
     padding: 35px;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .orgs h3,
-.orgs p {
+.orgs h5 {
     padding: 3px;
     color: white;
+    font-weight: 500;
 }
 
 .contact {
@@ -254,6 +267,16 @@ h3 {
     font-weight: 500;
     font-size: 16px;
     transition: 0.5s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  background: rgba(0, 0, 0, 0.500);
+  z-index: 9999;
+  transition: all 1.5s ease;
 }
 
 .contact .btn:hover {
