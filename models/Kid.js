@@ -15,6 +15,10 @@ const KidSchema = new mongoose.Schema({
     photo : {
         type : String
     },
+    adoptedBy : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'User'
+    },
     desc : {
         type : String
     }

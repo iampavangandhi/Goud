@@ -17,7 +17,7 @@ router.post('/register', (req, res) => {
     errors.push({ msg: 'Please enter all fields' });
   }
 
-  if(phone.length > 10 || isInteger(phone)){
+  if(phone.length > 11){
     errors.push({ msg : 'Phone no must be 10 digits only.'})
   }
 
