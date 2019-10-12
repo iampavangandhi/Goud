@@ -35,8 +35,10 @@ const OrphSchema = new mongoose.Schema({
     },
     kids : [{
         type : mongoose.Schema.Types.ObjectId,
+
         ref : 'Kids',
         required : false
+
     }]
 
 });
