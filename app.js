@@ -2,13 +2,14 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const oPassport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
 
 const app = express();
 
 require('./config/passport')(passport);
-//equire('./config/orphanagePassport')(passport);
+require('./config/orphanagePassport')(oPassport);
 
 const db = require('./config/keys').mongoURI;
 
@@ -33,6 +34,8 @@ app.use(express.static('public'));
 
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(oPassport.initialize());
+app.use(oPassport.session());
 
 app.use(flash());
 

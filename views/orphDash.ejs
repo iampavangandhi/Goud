@@ -3,10 +3,10 @@
         <div class="dashboard-details d-flex flex-row justify-content-start align-items-center ">
             <img class="m-2" src="../Assets/3.jpg" height="140px" alt="">
             <div class="dashboard-details-text">
-                <h3 class="ml-2">Welcome, Orphanage name</h3>
-                <h5 class="ml-3"><i class="mr-2 fas fas fa-map-marked-alt"></i>New Delhi</h5>
-                <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i>Manager Name</h5>
-                <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i>90XXXXXXXX</h5>
+                <h3 class="ml-2">Welcome, <%= orp.name %></h3>
+                <h5 class="ml-3"><i class="mr-2 fas fas fa-map-marked-alt"></i><%= orp.address %></h5>
+                <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i><%= orp.manager %></h5>
+                <h5 class="ml-3"><i class="mr-2 fas fas fa-mobile"></i><%= orp.phone %></h5>
             </div>
             <div class="dashboard-details-text">
                 <h5 class="ml-5"><i class="mr-2 fas fas fa-map-marked-alt"></i>Established Year : 2000</h5>

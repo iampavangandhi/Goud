@@ -92,9 +92,9 @@ router.post('/register', (req, res) => {
 });
 
 router.post('/login', (req, res, next) => {
-  passport.authenticate('local', {
+  passport.authenticate('orp', {
     //req.send('hey orphanage'),
-    successRedirect: '/orphanage/register',
+    successRedirect: '/orphanage/dashboard',
     failureRedirect: '/orphanage/login',
     failureFlash: true
   })(req, res, next);

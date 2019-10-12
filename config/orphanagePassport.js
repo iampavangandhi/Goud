@@ -6,13 +6,13 @@ const bcrypt = require('bcryptjs');
 const Orp = require('../models/Orphanage');
 
 module.exports = function(passport) {
-  passport.use(
+  passport.use('orp',
     new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
       // Match user
       Orp.findOne({
         email: email
       }).then(orp => {
-        if (!user) {
+        if (!orp) {
           return done(null, false, { message: 'That email is not registered' });
         }
 
@@ -29,12 +29,12 @@ module.exports = function(passport) {
     })
   );
 
-  passport.serializeUser(function(user, done) {
+  passport.serializeUser(function(orp, done) {
     done(null, orp.id);
   });
 
   passport.deserializeUser(function(id, done) {
-    User.findById(id, function(err, orp) {
+    Orp.findById(id, function(err, orp) {
       done(err, orp);
     });
   });
