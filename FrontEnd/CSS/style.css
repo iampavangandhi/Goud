@@ -46,18 +46,19 @@ header {
 
 .img-main {
     position: relative;
-    border-top: 7px solid red;
+    border-top: 4px solid gray;
     margin-bottom: 5px;
 
 }
 
 .hero h1 {
+    font-size: 3.0rem;
+    color: whitesmoke;
     position: absolute;
-    top: 50%;
+    top: 40%;
     bottom: 50%;
     z-index: 4;
     font-family: var(--Lato);
-    color: white;
 }
 
 .hero {
@@ -67,7 +68,7 @@ header {
 }
 
 
-.item {
+/* .item {
     position: static;
     color: #ffffff;
     font-size: 25px;
@@ -75,7 +76,7 @@ header {
     background-color: red;
     border: 1.5px solid grey;
     border-radius: 5px;
-}
+} */
 
 
 .nav-item a {
@@ -139,6 +140,10 @@ h3 {
     font-family: var(--Lato)
 }
 
+.about-text h1{
+    font-size: 3.4rem;
+}
+
 
 
 
@@ -183,6 +188,10 @@ h3 {
 .getInvolved {
     height: 100vh;
 
+}
+
+.getInvolved-section{
+    margin-top: 50px;
 }
 
 .orgs {
